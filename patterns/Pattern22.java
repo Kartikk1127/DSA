@@ -1,3 +1,5 @@
+package patterns;
+
 public class Pattern22 {
     public void pattern22(int n) {
         for(int i = 0; i < 2 * n - 1; i ++) {

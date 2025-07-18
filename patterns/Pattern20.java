@@ -1,3 +1,5 @@
+package patterns;
+
 public class Pattern20 {
     public void pattern20(int n) {
         for (int i = 0; i < n; i++) {

@@ -1,3 +1,5 @@
+package patterns;
+
 public class Pattern13 {
     public void pattern13(int n) {
         int count = 1;

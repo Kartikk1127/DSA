@@ -1,9 +1,7 @@
-class Solution {
+package patterns;
 
-    public static void main(String[] args) {
-        pattern17(5);
-    }
-    public static void pattern17(int n) {
+class Pattern17 {
+    public void pattern17(int n) {
         for(int i = 0; i < n; i ++) {
             for(int j = 0; j < n-i-1; j++){
                 System.out.print(" ");
@@ -12,7 +10,7 @@ class Solution {
             System.out.println();
         }
     }
-    public static void printCharacters(int limit) {
+    public void printCharacters(int limit) {
         for (int i = 0; i <= limit; i++) {
             char ch = (char) (i + 65);
             System.out.print(ch);

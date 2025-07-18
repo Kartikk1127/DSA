@@ -1,3 +1,5 @@
+package patterns;
+
 class Pattern11 {
     public void pattern11(int n) {
         int start = 0;
