@@ -6,7 +6,7 @@
       1. ArrayList
       2. LinkedList
       3. Stack
-      4. Vector
+      4. Vector -- similar to the array list, but it is thread safe.
    2. Set
       1. HashSet
       2. TreeSet
