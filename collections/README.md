@@ -8,12 +8,12 @@
       3. Stack
       4. Vector -- similar to the array list, but it is thread safe.
    2. Set
-      1. HashSet
-      2. TreeSet
+      1. HashSet -- doesn't guarantee that the elements will be stored in sorted order.(O(1))
+      2. TreeSet -- guarantees that the elements stored would be in sorted order. (O(logN))
    3. Queue
-      1. ArrayDequeue
+      1. ArrayDequeue -- first in first out.
       2. LinkedList
-      3. PriorityQueue
+      3. PriorityQueue -- by default it is a minimum heap data structure(this is a tree data structure)
 3. Map
    1. HashMap
    2. TreeMap
