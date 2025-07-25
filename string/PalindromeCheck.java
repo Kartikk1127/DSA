@@ -1,11 +1,7 @@
+package string;
 
-import java.util.Vector;
-
-public class Main {
-    public static void main(String[] args) {
-        System.out.println(palindromeCheck("hannah"));;
-    }
-    public static boolean palindromeCheck(String s) {
+public class PalindromeCheck {
+    public boolean palindromeCheck(String s) {
         // your code goes here
         StringBuilder reversed = new StringBuilder();
         int low = 0;
