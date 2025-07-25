@@ -1,17 +1,20 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        pattern21(5);
+        List<Integer> list = new ArrayList<>();
+        list.add(3);
+        System.out.println(Arrays.toString(list.toArray()));
     }
-    public static void pattern21(int n) {
-        for(int i = 0; i < 2 * n - 1; i ++) {
-            for(int j = 0; j < 2 * n -1 ; j ++) {
-                int bottom = 2 * n - 2 - i;
-                int right = 2 * n - 2 - j;
-
-                int valueToBePrinted = n - Math.min(Math.min(i,bottom) , Math.min(j,right));
-                System.out.print(valueToBePrinted + " ");
+    public static int[] divisors(int n) {
+        List<Integer> resultList = new ArrayList<>();
+        for(int i = 1; i <= n; i++) {
+            if(n%i==0) {
+                resultList.add(i);
             }
-            System.out.println();
         }
+        return resultList.stream().mapToInt(Integer::intValue).toArray();
     }
 }
