@@ -1,20 +1,27 @@
 
-import java.util.Vector;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(palindromeCheck("hannah"));;
+        String temp = "12";
+//        System.out.println(temp.substring(0,1));
+        System.out.println(largeOddNum("000050347"));
     }
-    public static boolean palindromeCheck(String s) {
+
+    public static String largeOddNum(String s) {
+        if (s.isEmpty()) return "";
         // your code goes here
-        StringBuilder reversed = new StringBuilder();
-        int low = 0;
-        int high = s.length() - 1;
-        while (high >= 0) {
-            char higher = s.charAt(high);
-            reversed.append(higher);
-            high--;
+        StringBuilder str = new StringBuilder();
+        for(int i = 0; i < s.length(); i ++) {
+            if (s.charAt(i)!='0') {
+                str.append(s.substring(i));
+                break;
+            }
         }
-        return reversed.toString().equals(s);
+        String input = str.toString();
+        for(int i = input.length()-1; i >= 0; i --) {
+            if((input.charAt(i)-'0') %2 !=0) return input.substring(0,i+1);
+        }
+        return "";
     }
 }
