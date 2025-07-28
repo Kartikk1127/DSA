@@ -11,7 +11,7 @@ public class CustomComparator {
         al.add(1);
         al.add(5);
         al.add(4);
-        /*Collections.sort(al, new Comparator<Integer>() {
+        Collections.sort(al, new Comparator<Integer>() {
             // [num1, num2]
             @Override
             public int compare(Integer num1, Integer num2) {
@@ -23,8 +23,8 @@ public class CustomComparator {
                 }
                 return 0;
             }
-        });*/
-        Collections.sort(al, (num1, num2) -> num2 - num1);
+        });
+//        Collections.sort(al, (num1, num2) -> num2 - num1);
         System.out.println(al);
     }
 }
