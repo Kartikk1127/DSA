@@ -1,13 +1,10 @@
+package string;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Main {
-    public static void main(String[] args) {
-        String str = "dog";
-        String str2 = "cat";
-        System.out.println(anagramStrings(str,str2));
-    }
-    public static boolean anagramStrings(String s, String t) {
+public class ValidAnagrams {
+    public boolean anagramStrings(String s, String t) {
         //your code goes here
         if(s.length()!=t.length()) return false;
         Map<Character,Integer> mp1 = new HashMap<>();
@@ -20,7 +17,7 @@ public class Main {
         for(Map.Entry<Character,Integer> mp : mp1.entrySet()) {
             char key = mp.getKey();
             int value = mp.getValue();
-            if(value!=mp2.get(key)) return false;
+            if(mp2.get(key) == null || value!=mp2.get(key)) return false;
         }
         return true;
     }
