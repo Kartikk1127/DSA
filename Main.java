@@ -3,25 +3,27 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        String str = "dog";
-        String str2 = "cat";
-        System.out.println(anagramStrings(str,str2));
-    }
-    public static boolean anagramStrings(String s, String t) {
-        //your code goes here
-        if(s.length()!=t.length()) return false;
-        Map<Character,Integer> mp1 = new HashMap<>();
-        Map<Character,Integer> mp2 = new HashMap<>();
-        for(int i = 0; i < s.length(); i++) {
-            mp1.put(s.charAt(i), mp1.getOrDefault(s.charAt(i),0)+1);
-            mp2.put(t.charAt(i), mp2.getOrDefault(t.charAt(i),0)+1);
+        String s = "tree";
+        Map<Character,Integer> mp = new HashMap<>();
+        for(char ch : s.toCharArray()) {
+            mp.put(ch,mp.getOrDefault(ch,0)+1);
         }
-
-        for(Map.Entry<Character,Integer> mp : mp1.entrySet()) {
-            char key = mp.getKey();
-            int value = mp.getValue();
-            if(value!=mp2.get(key)) return false;
+        System.out.println(mp);
+        List<Map.Entry<Character,Integer>> list = new ArrayList<>(mp.entrySet());
+        list.sort(new Comparator<Map.Entry<Character, Integer>>() {
+            @Override
+            public int compare(Map.Entry<Character, Integer> entry1, Map.Entry<Character, Integer> entry2) {
+                if (!entry1.getValue().equals(entry2.getValue())) {
+                    return entry2.getValue().compareTo(entry1.getValue());
+                }
+                return entry1.getKey().compareTo(entry2.getKey());
+            }
+        });
+        List<Character> result = new ArrayList<>();
+        for (Map.Entry<Character, Integer> characterIntegerEntry : list) {
+            char ch = characterIntegerEntry.getKey();
+            result.add(ch);
         }
-        return true;
+        System.out.println(list);
     }
 }
