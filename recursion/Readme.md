@@ -10,8 +10,8 @@ If the base condition is met, the function call will not go further.
 Where first you do the job and then call the function  
 Example: [TailRecursion.java](TailRecursion.java)
 
-## Head recursion
-Where first you call the function and then do the job.
+## Head recursion -- also known as backtracking
+Where first you call the function and then do the job. Involves backtracking.
 Example: [HeadRecursion.java](HeadRecursion.java)
 
 ## Stack Overflow
@@ -20,3 +20,7 @@ If the base condition is never met, it leads to infinite recursion and hence sta
 
 ## Recursion Tree
 Visualizing recursion in the form of a tree
+
+## Time and Space Complexity
+Time:: O(n)  
+Space:: O(n)
