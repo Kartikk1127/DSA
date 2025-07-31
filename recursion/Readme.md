@@ -24,3 +24,35 @@ Visualizing recursion in the form of a tree
 ## Time and Space Complexity
 Time:: O(n)  
 Space:: O(n)
+
+## Recursion with Parameters
+This is another way where you are not using any global values but are manipulating the parameters.
+
+Let's say you are given a number n, you have to print all the numbers 1 to n. How will we do that?  
+**Tail recursion**
+```
+func(i,n) {
+    if(i>n) return
+    print(i)
+    func(i+1,n)
+}
+```
+
+**Head Recursion**
+```
+func(i,n) {
+    if(i>n) return
+    func(i+1,n)
+    print(i)
+}
+```
+
+Can we do it without variable i?  
+
+```
+func(n) {
+    if(n==0) return
+    func(n-1)
+    print(n)
+}
+```
