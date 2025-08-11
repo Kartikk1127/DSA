@@ -7,3 +7,4 @@
 4. [Isomorphic Strings](string/Isomorphic.java)
 5. [Merge Sort](sorting/algorithms/MergeSort.java)
 6. [Remove Duplicates from sorted array](arrays/logic/RemoveDuplicates.java)
+7. [Spiral Matrix](arrays/logic/SpiralMatrix.java)
