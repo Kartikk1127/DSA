@@ -1,5 +1,8 @@
 # DSA
 
+## Notes
+1. Once you come to the recursion topic, go on to solve the pascal's triangle via recursion again.
+
 ## Problems to be revisited
 1. [patterns.Pattern22](patterns/Pattern22.java)
 2. [Largest Odd](string/LargestOdd.java)
