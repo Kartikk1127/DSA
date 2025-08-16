@@ -2,6 +2,11 @@ package arrays.logic;
 
 import java.util.Arrays;
 
+//find the first element from the right that is smaller than the adjacent next element.
+//now, go on to find the first smallest element that is greater than the current element.
+//swap these two elements
+//now reverse the array after the current element.
+
 public class NextPermutation {
     public static void main(String[] args) {
         int [] arr = {1,3,2};
