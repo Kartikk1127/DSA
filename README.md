@@ -13,3 +13,4 @@
 7. [Spiral Matrix](arrays/logic/SpiralMatrix.java)
 8. [Three Sum](arrays/logic/ThreeSum.java)
 9. [Kadane's Algorithm](arrays/logic/KadaneAlgorithm.java)
+10. [Next permutation](arrays/logic/NextPermutation.java)
