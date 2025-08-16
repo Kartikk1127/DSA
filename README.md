@@ -12,3 +12,4 @@
 6. [Remove Duplicates from sorted array](arrays/logic/RemoveDuplicates.java)
 7. [Spiral Matrix](arrays/logic/SpiralMatrix.java)
 8. [Three Sum](arrays/logic/ThreeSum.java)
+9. [Kadane's Algorithm](arrays/logic/KadaneAlgorithm.java)
