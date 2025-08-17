@@ -15,3 +15,4 @@
 9. [Kadane's Algorithm](arrays/logic/KadaneAlgorithm.java)
 10. [Next permutation](arrays/logic/NextPermutation.java)
 11. [Majority Element 1](arrays/logic/MajorityElement1.java)
+12. [Missing and Repeating elements](arrays/logic/MissingRepeating.java)
