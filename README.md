@@ -17,3 +17,5 @@
 11. [Majority Element 1](arrays/logic/MajorityElement1.java)
 12. [Missing and Repeating elements](arrays/logic/MissingRepeating.java)
 13. [Count Inversions](arrays/logic/CountInversions.java)
+14. [Reverse Pairs](arrays/logic/ReversePairs.java)
+15. [Maximum Product Subarray](arrays/logic/MaximumProductSubarray.java)
