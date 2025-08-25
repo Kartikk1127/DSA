@@ -1,4 +1,4 @@
-package hashing;
+package hashing.basic;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;
