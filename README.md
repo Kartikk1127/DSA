@@ -2,6 +2,7 @@
 
 ## Notes
 1. Once you come to the recursion topic, go on to solve the pascal's triangle via recursion again.
+2. Take a look at the longest subarray sum problem every week. It has a very important concept related to prefix sum.
 
 ## Problems to be revisited
 1. [patterns.Pattern22](patterns/Pattern22.java)
