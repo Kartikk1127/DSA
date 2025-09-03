@@ -24,3 +24,4 @@
 17. [Longest Consecutive](hashing/medium/LongestConsecutiveSequence.java)
 18. [Longest Subarray sum******](hashing/medium/LongestSubarray.java)
 19. [Count Subarray sum*****](hashing/medium/CountSubarraysWithGivenSum.java)
+20. [SubarrayWithXorK](hashing/medium/SubarrayWithXorK.java)
