@@ -1,5 +1,8 @@
 package hashing.medium;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CountSubarraysWithGivenSum {
 
     public static void main(String[] args) {
@@ -40,6 +43,21 @@ public class CountSubarraysWithGivenSum {
                     count ++;
                 }
             }
+        }
+        return count;
+    }
+
+    // optimal
+    public static int subarraySumOptimal(int[] nums, int k) {
+        Map<Integer, Integer> countMap = new HashMap<>();
+        countMap.put(0, 1);
+        int count = 0, sum = 0;
+        for (int num : nums) {
+            sum += num;
+            if (countMap.containsKey(sum - k)) {
+                count+=countMap.getOrDefault(sum-k,0);
+            }
+            countMap.put(sum, countMap.getOrDefault(sum, 0) + 1);
         }
         return count;
     }
